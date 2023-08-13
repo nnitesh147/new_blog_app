@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import axios from "axios";
 
-axios.defaults.baseURL = "https://blog-nitesh-app.vercel.app/api";
+axios.defaults.baseURL = "https://nitesh-blog-app.vercel.app/api";
 axios.defaults.withCredentials = true;
 
 export const Context = createContext({ isAuthentic: false });
