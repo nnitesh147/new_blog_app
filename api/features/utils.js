@@ -5,9 +5,9 @@ const sendCookie = (user, res, message, statuscode = 200) => {
   res
     .status(statuscode)
     .cookie("token", token, {
-      httpOnly: true,
-      sameSite: process.env.NODE_ENV === "DEVELOPMENT" ? "lax" : "none",
-      secure: process.env.NODE_ENV === "DEVELOPMENT" ? false : true,
+      // httpOnly: true,
+      // sameSite: process.env.NODE_ENV === "DEVELOPMENT" ? "lax" : "none",
+      // secure: process.env.NODE_ENV === "DEVELOPMENT" ? false : true,
     })
     .json({
       success: true,
