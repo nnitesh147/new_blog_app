@@ -11,7 +11,7 @@ const Header = () => {
 
   const logOutHandler = async () => {
     try {
-      await axios.get("/logout");
+      await axios.post("/logout");
       toast.success("LogOut SuccessFull");
       setisAuthentic(false);
       setuserdoc(null);
